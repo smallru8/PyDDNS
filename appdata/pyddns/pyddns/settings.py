@@ -170,7 +170,6 @@ DNS_ALLOW_AGENT= os.environ.get('DNS_ALLOW_AGENT')
 DNS_DOMAIN= os.environ.get('DNS_DOMAIN')
 OWN_ADMIN= os.environ.get('OWN_ADMIN')
 
-
 #Configuration for translation
 from django.utils.translation import ugettext_lazy as _
 LANGUAGES = (

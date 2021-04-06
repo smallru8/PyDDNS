@@ -1,3 +1,4 @@
+
 #encoding:utf-8
 from django.contrib.auth import authenticate, login as djlogin, logout as djlogout
 from django.contrib.auth.decorators import login_required
@@ -14,7 +15,7 @@ from django.contrib.auth.models import User
 import json
 import base64
 import requests
-
+import os
 #from common.utils import getForwardedFor
 #from servers.models import Activity_log
 from common.models import Activity_log
@@ -29,6 +30,8 @@ import socket
 import dns.resolver
 import logging
 logger = logging.getLogger('django')
+
+MAX_DOMAINS_PERUSER= int(os.environ.get('MAX_DOMAINS_USER'))
 
 @login_required
 def main(request,id_user=None):
@@ -183,6 +186,9 @@ def add_subdomain(request):
             user_login=request.user
 
             if admin or user_login==user:
+                if (not admin) and SubDomain.objects.filter(user=user).count()>=MAX_DOMAINS_PERUSER:
+                    myjson['error']= "MAX Domain number"
+                    return HttpResponse(json.dumps(myjson))
                 subdomain=SubDomain(
                                         user=user,
                                         name=subdomain
