@@ -38,11 +38,12 @@ Install docker-composer - https://docs.docker.com/compose/install/
 DOMAIN=ddns.demo.com  <-- our domain
 SHARED_SECRET=el@sadsadyS58 <-- password for internal API-REST
 
-DATABASE_NAME=pyddns
-DATABASE_USER=pyddns
-DATABASE_PASS=PyDyn@m1cDNSP0s
-DATABASE_HOST=postgres
-DATABASE_PORT=5432
+DATABASE_NAME=pyddns <-- DB Name
+DATABASE_USER=pyddns <-- DB username
+DATABASE_PASS=PyDyn@m1cDNSP0s <-- DB username's passwd
+DATABASE_ROOT_PASS=root@m1cDNSP0s <-- DB root's passwd
+DATABASE_HOST=mariadb <-- DB IP
+DATABASE_PORT=3306 <-- DB Port
 
 DJANGO_SU_NAME=admin
 DJANGO_SU_EMAIL=admin@company.com
@@ -53,8 +54,12 @@ DJANGO_PYTHONUNBUFFERED=1
 OWN_ADMIN: 1  <-- 1 = all users can create subdomains, 0 = only the administrator can create subdomains
 DNS_ALLOW_AGENT: ddclient3,ddclient <-- If you want to control by client, put their names separated by comma
 
-WEB_PORT=80
+MAX_DOMAINS_USER=2 <-- Maximum domains value every user can have 
+
+HTTP_PORT=80
+HTTPS_PORT=443
 DNS_PORT=53
+
 ```
 
 - Install docker and docker-compose
