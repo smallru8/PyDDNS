@@ -147,7 +147,7 @@ yourdomain.ddns.demo.com
 ```
 
 <br><br><br>
-### Translation :us::es:
+### Translation :us::es::taiwan:
 The system automatically detects the language of your browser.
 If you want to add your translations you must follow the following steps:
 
@@ -159,7 +159,8 @@ If you want to add your translations you must follow the following steps:
 <br><br><br>
 ### Change default language
 - open file --> nano ~/PyDDNS/appdata/pyddns/pyddns/settings.py
-- change the variable in line 149/185 to --> LANGUAGE_CODE = 'en-En'
+- English: change the variable in line 149/185 to --> LANGUAGE_CODE = 'en-En'
+- Chinese: change the variable in line 149/185 to --> LANGUAGE_CODE = 'zh-Hant'
 
 <br><br><br>
 ### TODO

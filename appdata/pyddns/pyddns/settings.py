@@ -106,12 +106,12 @@ WSGI_APPLICATION = 'pyddns.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ.get('DB_NAME'),
         'USER': os.environ.get('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASSWORD'),
         'HOST': os.environ.get('DB_HOST'),
-        'PORT': '5432',
+        'PORT': os.environ.get('DB_PORT'),
         #'OPTIONS' : {'charset':'ISO8859_1'},
     }
 }
@@ -146,7 +146,7 @@ AUTHENTICATION_BACKENDS = (
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'es-Es'
+LANGUAGE_CODE = 'en-En'
 
 TIME_ZONE = 'UTC'
 
@@ -176,6 +176,7 @@ from django.utils.translation import ugettext_lazy as _
 LANGUAGES = (
     ('es', _('Spanish')),
     ('en', _('English')),
+    ('zh-hant', _('Traditional Chinese')),
 )
 
 # Definimos la ruta de los archivos de idiomas

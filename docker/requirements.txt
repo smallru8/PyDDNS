@@ -3,5 +3,6 @@ django-datatables-view
 psycopg2-binary
 python-dateutil
 pillow
+mysqlclient
 requests
 dnspython==1.16.0

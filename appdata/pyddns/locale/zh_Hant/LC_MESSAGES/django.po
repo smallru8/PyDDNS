@@ -1,0 +1,317 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-06 11:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <smallru8@skunion.org>\n"
+"Language: zh-TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: common/templates/login.html:100 pyddns/templates/subdomains.html.py:62
+#: pyddns/templates/users.html:63
+msgid "User"
+msgstr "使用者"
+
+#: common/templates/login.html:101 pyddns/templates/add_user.html.py:35
+msgid "Password"
+msgstr "密碼"
+
+#: common/templates/login.html:103
+msgid "Login"
+msgstr "登入"
+
+#: common/templates/permission_denied.html:30
+msgid "ACCESS DENIED"
+msgstr "拒絕存取"
+
+#: common/templates/permission_denied.html:31
+msgid "You do not have permission to see this page"
+msgstr "權限不足，無法瀏覽此頁面。"
+
+#: common/templates/permission_denied.html:32
+msgid "Go to back"
+msgstr "上一頁"
+
+#: pyddns/settings.py:165
+msgid "Spanish"
+msgstr "西班牙文"
+
+#: pyddns/settings.py:166
+msgid "English"
+msgstr "英文"
+
+msgid "Traditional Chinese"
+msgstr "繁體中文"
+
+#: pyddns/templates/add_user.html:12
+msgid "Edit user"
+msgstr "編輯使用者"
+
+#: pyddns/templates/add_user.html:14 pyddns/templates/users.html.py:50
+msgid "Add user"
+msgstr "新增使用者"
+
+#: pyddns/templates/add_user.html:19
+#, fuzzy
+#| msgid "User"
+msgid "Username"
+msgstr "使用者名稱"
+
+#: pyddns/templates/add_user.html:23 pyddns/templates/users.html.py:65
+msgid "Name"
+msgstr "名字"
+
+#: pyddns/templates/add_user.html:27
+msgid "Last name"
+msgstr "姓氏"
+
+#: pyddns/templates/add_user.html:31 pyddns/templates/users.html.py:64
+msgid "Email"
+msgstr "電子郵件地址"
+
+#: pyddns/templates/add_user.html:39
+msgid "Is admin?"
+msgstr "管理員身分"
+
+#: pyddns/templates/add_user.html:56
+msgid "you must enter a username"
+msgstr "請輸入使用者名稱"
+
+#: pyddns/templates/add_user.html:59
+msgid "you must enter a name"
+msgstr "請輸入使用者姓名"
+
+#: pyddns/templates/add_user.html:62
+msgid "you must enter a last name"
+msgstr "請輸入使用者姓名"
+
+#: pyddns/templates/add_user.html:65
+msgid "you must enter a email"
+msgstr "請輸入電子郵件地址"
+
+#: pyddns/templates/add_user.html:69
+msgid "Please enter a password of at least 8 characters"
+msgstr "請輸入密碼，至少8個字"
+
+#: pyddns/templates/add_user.html:111
+msgid "The username "
+msgstr "使用者名稱: "
+
+#: pyddns/templates/add_user.html:111
+msgid " already exists"
+msgstr " 已經存在"
+
+#: pyddns/templates/dash.html:39 pyddns/templates/subdomains.html.py:39
+#: pyddns/templates/users.html:39
+msgid "Users"
+msgstr "用戶"
+
+#: pyddns/templates/dash.html:40 pyddns/templates/subdomains.html.py:40
+#: pyddns/templates/users.html:40 pyddns/templates/users.html.py:68
+msgid "Domains"
+msgstr "域名"
+
+#: pyddns/templates/dash.html:42 pyddns/templates/subdomains.html.py:41
+#: pyddns/templates/users.html:41
+msgid "Logout"
+msgstr "登出"
+
+#: pyddns/templates/dash.html:49
+msgid "Welcome"
+msgstr "歡迎"
+
+#: pyddns/templates/dash.html:51
+msgid "Dashboard of the user "
+msgstr "儀表板 "
+
+#: pyddns/templates/dash.html:58
+msgid "Subdomain name "
+msgstr "子域名 "
+
+#: pyddns/templates/dash.html:69
+msgid "Your current IP is"
+msgstr "登入IP:"
+
+#: pyddns/templates/dash.html:73
+msgid "My domains"
+msgstr "我的域名"
+
+#: pyddns/templates/dash.html:75
+msgid "Last update"
+msgstr "上次更新"
+
+#: pyddns/templates/dash.html:76 pyddns/templates/subdomains.html.py:64
+msgid "Action"
+msgstr "Action"
+
+#: pyddns/templates/dash.html:80
+msgid "Copy"
+msgstr "Copy"
+
+#: pyddns/templates/dash.html:84
+msgid "Update to"
+msgstr "更新至"
+
+#: pyddns/templates/dash.html:94
+msgid "My last records"
+msgstr "最新紀錄"
+
+#: pyddns/templates/dash.html:102
+msgid "Date"
+msgstr "日期"
+
+#: pyddns/templates/dash.html:105
+msgid "Code"
+msgstr "Code"
+
+#: pyddns/templates/dash.html:108
+msgid "Message"
+msgstr "Message"
+
+#: pyddns/templates/dash.html:111 pyddns/templates/subdomains.html.py:61
+msgid "Domain"
+msgstr "Domain"
+
+#: pyddns/templates/dash.html:117
+msgid "Agent"
+msgstr "Agent"
+
+#: pyddns/templates/dash.html:138 pyddns/templates/subdomains.html.py:78
+#: pyddns/templates/users.html:97
+msgid "Previous"
+msgstr "Previous"
+
+#: pyddns/templates/dash.html:142 pyddns/templates/subdomains.html.py:82
+#: pyddns/templates/users.html:101
+msgid "Page"
+msgstr "Page"
+
+#: pyddns/templates/dash.html:142 pyddns/templates/subdomains.html.py:82
+#: pyddns/templates/users.html:101
+msgid "of"
+msgstr "of"
+
+#: pyddns/templates/dash.html:146 pyddns/templates/subdomains.html.py:86
+#: pyddns/templates/users.html:105
+msgid "Next"
+msgstr "Next"
+
+#: pyddns/templates/dash.html:158 pyddns/templates/subdomains.html.py:98
+#: pyddns/templates/users.html:117
+msgid "The update was successful and the hostname is now updated"
+msgstr "域名IP更新成功"
+
+#: pyddns/templates/dash.html:159 pyddns/templates/subdomains.html.py:99
+#: pyddns/templates/users.html:118
+msgid "The APP not sync bind"
+msgstr "The APP not sync bind"
+
+#: pyddns/templates/dash.html:160 pyddns/templates/subdomains.html.py:100
+#: pyddns/templates/users.html:119
+msgid "The hostname specified does not exist in this user account"
+msgstr "該域名不存在於此使用者帳戶"
+
+#: pyddns/templates/dash.html:161 pyddns/templates/subdomains.html.py:101
+#: pyddns/templates/users.html:120
+msgid "The username and password pair do not match a real user"
+msgstr "帳號或密碼錯誤"
+
+#: pyddns/templates/dash.html:162 pyddns/templates/dash.html.py:163
+#: pyddns/templates/subdomains.html:102 pyddns/templates/subdomains.html:103
+#: pyddns/templates/users.html.py:121 pyddns/templates/users.html:122
+msgid "Incorrect authentication format"
+msgstr "Incorrect authentication format"
+
+#: pyddns/templates/dash.html:164 pyddns/templates/subdomains.html.py:104
+#: pyddns/templates/users.html:123
+msgid "Missing header HTTP_AUTHORIZATION"
+msgstr "Missing header HTTP_AUTHORIZATION"
+
+#: pyddns/templates/dash.html:165 pyddns/templates/subdomains.html.py:105
+#: pyddns/templates/users.html:124
+msgid "Missing header HTTP_USER_AGENT"
+msgstr "Missing header HTTP_USER_AGENT"
+
+#: pyddns/templates/dash.html:166 pyddns/templates/subdomains.html.py:106
+#: pyddns/templates/users.html:125
+msgid "You have exceeded the maximum number of attempts"
+msgstr "超出最大嘗試次數"
+
+#: pyddns/templates/dash.html:232
+msgid "The subdomain already exists"
+msgstr "子域名已存在"
+
+#: pyddns/templates/dash.html:262
+msgid "You do not have permission to delete the subdomain"
+msgstr "權限不足，無法刪除此域名。"
+
+#: pyddns/templates/subdomains.html:48
+msgid "Admin subdomains"
+msgstr "Admin subdomains"
+
+#: pyddns/templates/subdomains.html:51
+msgid "Search subdomain"
+msgstr "搜尋子域名"
+
+#: pyddns/templates/subdomains.html:63
+msgid "Contact email"
+msgstr "Contact email"
+
+#: pyddns/templates/subdomains.html:71
+msgid "Admin"
+msgstr "Admin"
+
+#: pyddns/templates/users.html:48
+msgid "Admin users"
+msgstr "管理員用戶"
+
+#: pyddns/templates/users.html:53
+msgid "Search user"
+msgstr "搜尋使用者"
+
+#: pyddns/templates/users.html:66
+msgid "Last Name"
+msgstr "姓氏"
+
+#: pyddns/templates/users.html:67
+msgid "Superuser"
+msgstr "超級使用者"
+
+#: pyddns/templates/users.html:69
+#, fuzzy
+#| msgid "Action"
+msgid "Actions"
+msgstr "Actions"
+
+#, fuzzy
+#~| msgid "Subdomain name "
+#~ msgid "Subdomains"
+#~ msgstr "Nombre del subdominio "
+
+#~ msgid "Administrator"
+#~ msgstr "Administrador"
+
+#, fuzzy
+#~| msgid "Administrator"
+#~ msgid "Administration"
+#~ msgstr "Administrador"
+
+#, fuzzy
+#~| msgid "The updatewas successful and the hostname is now updated"
+#~ msgid "The updatewas successful, and the hostname is now updated"
+#~ msgstr ""
+#~ "La actualización fue exitosa y el nombre de host ahora está actualizado"
+
+#~ msgid "Develop by"
+#~ msgstr "Desarrollado por"

@@ -9,6 +9,9 @@ RUN apt-get update && apt-get install \
     libkf5ldap-dev \
     xfonts-base \
     xfonts-75dpi \
+    gcc \
+    build-essential \
+    default-libmysqlclient-dev \
     -y --force-yes
 
 
@@ -26,5 +29,5 @@ COPY runserver.sh /script
 COPY wait-for-it.sh /script
 RUN chmod +x /script -R
 
-CMD ["/script/wait-for-it.sh", "postgres:5432", "--", "/script/runserver.sh"]
+CMD ["/script/wait-for-it.sh", "mariadb:3306", "--", "/script/runserver.sh"]
 #CMD ["python","manage.py","runserver","0.0.0.0:8000"]
