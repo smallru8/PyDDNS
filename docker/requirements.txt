@@ -6,3 +6,4 @@ pillow
 mysqlclient
 requests
 dnspython==1.16.0
+django-auth-ldap

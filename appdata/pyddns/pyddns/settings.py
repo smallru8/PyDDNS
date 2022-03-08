@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+import ldap
+from django_auth_ldap.config import LDAPSearch, GroupOfNamesType
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,15 +22,32 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'w_mgv7app6__864!-x$zv$*5r(p7@@i*i^tm6c0oou0iw+*lj9'
+SECRET_KEY = 'w_mgv7app6__864!-x$zv$*5r(p7@@i*i^tm6c0oou0iw+*lj9' #Edit
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True #Edit
 
 ALLOWED_HOSTS = ['*']
 
 
 LOGIN_URL='/common/login/'
+
+##########################
+AUTH_LDAP_SERVER_URI = os.environ.get('LDAP_URI') 
+AUTH_LDAP_BIND_DN = os.environ.get('LDAP_BIND_DN')
+AUTH_LDAP_BIND_PASSWORD = os.environ.get('LDAP_BIND_PASSWD')
+
+AUTH_LDAP_USER_SEARCH = LDAPSearch(
+    os.environ.get('LDAP_BASE_DN'),
+    ldap.SCOPE_SUBTREE,
+    '(uid=%(user)s)', #set django's username as ldap's uid value
+)
+AUTH_LDAP_USER_ATTR_MAP = {
+    'first_name': 'cn',
+    'last_name': 'sn',
+    'email': 'sn',
+}
+##########################
 
 
 # Application definition
@@ -139,6 +158,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 AUTHENTICATION_BACKENDS = (
+	'django_auth_ldap.backend.LDAPBackend',
     'django.contrib.auth.backends.RemoteUserBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
