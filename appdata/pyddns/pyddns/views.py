@@ -376,7 +376,10 @@ def set_ip(request,domain,ip):
     resolver = dns.resolver.Resolver()
     resolver.nameservers=[socket.gethostbyname('ddns')]
     try:
-        ip_dig = resolver.query(domain,"A")[0]
+        if ":" in str(ip):
+            ip_dig = resolver.query(domain,"AAAA")[0]
+        else:
+            ip_dig = resolver.query(domain,"A")[0]
     except:
         ip_dig=None
 
